@@ -106,3 +106,8 @@ tfoot td {
     background-color: #009432;
     color: white;
 }
+
+.reprovado {
+    background-color: red;
+    color: white;
+}
