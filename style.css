@@ -2,28 +2,48 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
+    background-color: #E7E7E7 ;
+    padding: 100px 0;
+}
+
+#container {
+    max-width: 960px;
     width: 70vw;
     margin: auto;
-    padding: 40px 0;
+}
+
+header {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#logo {
+    display: inline-block;
+    height: 36px;
+    margin-right: 10px;
 }
 
 #form {
     margin-bottom: 40px;
+    display: flex;
+    margin-bottom: 56px;
 }
 
 input {
-    border: solid 1px rgba(0, 0, 0, 0.032);
+    border: none;
     border-bottom: solid 2px rgb(0, 0, 0);
-    font-size: 1.1em;
-    padding: 5px;
+    font-size: 24px;
+    padding: 8px;
     margin-right: 15px;
 }
 
@@ -33,12 +53,12 @@ input[type='number'] {
 
 button {
     color: white;
-    background-color: rgb(20, 165, 20);
-    font-size: 1.1em;
+    background-color: #009432;
+    font-size: 24px;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border-radius: 0%;
-    border: solid 1px black;
+    border: none;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.692);
     cursor: pointer;
 }
@@ -47,28 +67,42 @@ button {
 
 #tabela {
     width: 100%;
-    background-color: rgb(230, 230, 230);
 }
 
 thead th {
     border-bottom: solid 2px black;
-    padding: 5px 0;
-    font-size: 1.1em;
+    font-size: 24px;
+    padding: 10px 0;
 }
 
-#nome {
+#atividade {
     width: 50%;
 }
 
-td, tfoot th {
-    border-bottom: solid 1px black;
-    padding: 5px 0;
-}
-
-tfoot th {
-    font-size: 0.9em;
+table img{
+    height: 30px;
 }
 
 td {
     text-align: center;
+}
+
+td, tfoot th {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.322);
+    padding: 16px 0;
+    font-size: 18px;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.status {
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+    color: white;
 }

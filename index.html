@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculador de médias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora de médias</title>
 </head>
 <body>
-    <h1>Calculador de médias</h1>
-    <form id="form">
-        <input type="text" placeholder="Nome da atividade">
-        <input type="number" max="10" value= '0' min="0">
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table id="tabela">
-        <thead>
-            <tr>
-                <th scope="col" id="nome">Nome da atividade</th>
-                <th scope="col">Nota</th>
-                <th scope="col">Status</th>
-            </tr>
-        <tfoot>
-            <tr>
-                <th scope="row">Média final</th>
-                <td>---</td>
-                <td >---</td>
-            </tr>
-        </tfoot>
-        </thead>
-    </table>
+    <div id="container">
+        <header>
+            <img src="imagens/logo.png" alt="" id="logo">
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form id="form">
+            <input type="text" placeholder="Nome da atividade" required id="nome">
+            <input type="number" max="10" value= '0' min="0" required id="nota">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table id="tabela" cellspacing = '0'>
+            <thead>
+                <tr>
+                    <th scope="col" id="atividade">Nome da atividade</th>
+                    <th scope="col">Nota</th>
+                    <th scope="col">Status</th>
+                </tr>
+            <tbody id="conteudo">
+            </tbody>
+            <tfoot>
+                <tr id="res">
+                    <th scope="row">Média final</th>
+                    <td>---</td>
+                    <td class="status">---</td>
+                </tr>
+            </tfoot>
+            </thead>
+        </table>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
